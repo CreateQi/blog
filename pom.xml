@@ -21,20 +21,6 @@
    <dependencies>
    
    <dependency>
-				<groupId>org.apache.zookeeper</groupId>
-				<artifactId>zookeeper</artifactId>
-				<version>3.4.10</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.curator</groupId>
-				<artifactId>curator-framework</artifactId>
-				<version>2.12.0</version>
-			</dependency>
-			<dependency>
-			<groupId>org.apache.curator</groupId>
-			<artifactId>curator-recipes</artifactId>
-			<version>2.12.0</version>
-		</dependency>
    
       <!-- 导入运行场景 -->
         <dependency>

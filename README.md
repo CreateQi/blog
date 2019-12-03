@@ -5,3 +5,4 @@
 打包项目名为blog
 
 首页图片![image](https://github.com/CreateQi/blog/blob/master/images/1.png)
+tomcat目录结构![image](https://github.com/CreateQi/blog/blob/master/images/2.png)

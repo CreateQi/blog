@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="zh">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="/blog/css/index.css" media="all" />
+	  <style type="text/css">
+		  [v-cloak]{
+		    display:none;
+		  }
+		</style>
+	</head>
+
+	<body class="home blog custom-background round-avatars">
+      <div id="navigation"></div>	   
+		<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+			<div class="site-branding text-center">
+				<a href="">
+					<figure>
+						<img class="custom-logo avatar" src="/blog/images/omikron.png" />
+					</figure>
+				</a>
+				<h3 class="blog-description"><p>奇先僧i</p></h3>
+			</div>
+			<!-- .site-branding -->
+			<div class="decor-part">
+				<div id="particles-js"></div>
+			</div>
+			<div class="animation-header">
+				<div class="decor-wrapper">
+					<svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+						<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+						<path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+						<path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+						<path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+						<path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+						<path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+						<path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<div id="main" class="content">
+			<div class="container">
+				<article id="post-2" class="js-gallery post-2 page type-page status-publish has-post-thumbnail hentry">
+					<style>
+						.meta {
+							display: none;
+						}
+						
+						#NextPrevPosts {
+							margin: 0;
+							visibility: hidden;
+						}
+					</style>
+					<section class="post_content">
+						<header class="post_header">
+							<h1 class="post_title">街坊留言</h1>
+						</header>
+
+						<div class="meta split split--responsive cf" style="display: block;">
+							
+							<div id="social-share"><span class="entypo-share"><i class="iconfont">&#xe614;</i>分享</span></div>
+							<div class="slide">
+								<a class="btn-slide" title="switch down"><i class="iconfont">&#xe615;</i>折叠评论区</a>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+			<svg id="upTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+				<path d="M0 0 L50 100 L100 0 Z"></path>
+			</svg>
+			<div id="social">
+				<ul>
+					<li>
+						<a href="" title="qzone" target="_blank"><i class="iconfont">&#xe67f;</i></a>
+					</li>
+					<li>
+						<a href="" title="weibo" target="_blank"><i class="iconfont">&#xe680;</i></a>
+					</li>
+					<li>
+						<a href="" title="douban" target="_blank"><i class="iconfont">&#xe681;</i></a>
+					</li>
+					<li>
+						<a href="" title="twitter" target="_blank"><i class="iconfont">&#xe683;</i></a>
+					</li>
+				</ul>
+			</div>
+			<div id="panel">
+				<div class="comment-area">
+					<section class="comments">
+						<div class="comments-main">
+							<div id="comments-list-title"><span v-cloak>{{result.listSize}}</span> 条评论 </div>
+							<div id="loading-comments">
+								<div class="host">
+									<div class="loading loading-0"></div>
+									<div class="loading loading-1"></div>
+									<div class="loading loading-2"></div>
+								</div>
+							</div>
+							<ul class="commentwrap" id="commentwrap">
+								<!-- #comment-## -->
+								<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-" v-for="message in result.data">
+									<div id="comment-949" class="comment_body contents">
+										<div class="profile">
+											<a href="javascript:void(0)"><img :src="'/blog/images/'+message.imagesId+'.jpg'" class="gravatar" :alt="message.aurthor"></a>
+										</div>
+										<div class="main shadow">
+											<div class="commentinfo">
+												<section class="commeta">
+													<div class="shang">
+														<h4 class="author"><a href="" target="_blank" v-cloak>{{message.aurthor}}</a></h4>
+													</div>
+												</section>
+											</div>
+											<div class="body">
+												<p v-cloak>{{message.comments}}</p>
+											</div>
+											<div class="xia info">
+												<span><time v-cloak>{{message.createtime}}</time></span>
+												<!--  <span><a rel='nofollow' class='comment-reply-link' href='javascript:void(0)' @click="reply(message.aurthor,message.id)">回复</a></span> -->
+											</div>
+										</div>
+									</div>
+									<div :id="'replyComment'+message.id">
+									</div>
+								</li>
+								<!-- #comment-## -->
+
+							</ul>
+							<nav id="comments-navi" >
+								<span v-for="i in result.pageNum" class='page-numbers' @click="jump($event,i)">{{i}}</span>
+							</nav>
+							<div id="respond" class="comment-respond">
+								<h6 id="replytitle" class="comment-reply-title"><a rel="nofollow" id="cancel-comment-reply-link" href="javascript:void(0)" style="display:none;" @click="cancel($event)">取消</a></h6>
+								<form action="postComment" method="post" id="authorform" class="clearfix" onsubmit="return postComments()">
+									<div class="clearfix"></div>
+									<div class="author-info">
+										<input type="text" name="author" id="author" placeholder="昵  称 : " value="" tabindex="1" title="Name (required)"  maxlength="5"/>
+									</div>
+									<div class="clearfix"></div>
+									<div class="comment-form-info">
+										<div class="real-time-gravatar"> <img id="real-time-gravatar" src="/blog/images/d9885b7dc7a78f9cadfb81be7512d630.png" alt="gravatar头像" onclick="random()"/>
+										</div>
+										<p class="input-row">
+										    <input type="hidden" value="0" name="imageId"/>
+											<i class="row-icon"></i>
+											<textarea class="text_area" rows="3" cols="80" name="comment" id="comment" tabindex="4" placeholder="你不说两句吗？(°∀°)ﾉ……"></textarea>
+											<input type="submit" class="button" id="submit" tabindex="5" value="发送" />
+										</p>
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<svg id="dwTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+				<path d="M0 0 L50 100 L100 0 Z"></path>
+			</svg>
+			<div class="wrapper">
+			</div>
+		</div>
+
+		<footer id="footer" class="overlay animated from-top">
+			<div class="decor-wrapper">
+				<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+					<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+					<path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+					<path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+					<path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+					<path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+					<path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+					<path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+				</svg>
+			</div>
+			<div class="socialize" data-aos="zoom-in">
+				<li>
+					<a title="weibo" class="socialicon" href=""><i class="iconfont" aria-hidden="true">&#xe601;</i></a>
+				</li>
+				<li class="wechat">
+					<a class="socialicon"><i class="iconfont">&#xe609;</i></a>
+					<div class="wechatimg"><img src="/blog/images/qi.jpg"></div>
+				</li>
+				<li>
+					<a title="QQ" class="socialicon" href="" target="_blank"><i class="iconfont" aria-hidden="true">&#xe616;</i></a>
+				</li>
+			</div>
+			<div class="cr">
+				Copyright&copy;2019. Design by
+				<a href="javascript:void(0)">Qi</a>
+			</div>
+	</body>
+       <script type='text/javascript' src='/blog/js/jquery.min.js'></script>
+			<script type='text/javascript' src='/blog/js/plugins.js'></script>
+			<script type='text/javascript' src='/blog/js/script.js'></script>
+			<script type='text/javascript' src='/blog/js/particles.js'></script>
+			<script type='text/javascript' src='/blog/js/aos.js'></script>
+			<script src="/blog/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+			<script type='text/javascript' src='/blog/js/axios.min.js'></script>
+       <script type="text/javascript">
+       
+      function random(){
+    	  var imageId=parseInt(Math.random()*5+1);
+    	  $("#real-time-gravatar").attr("src","/blog/images/"+imageId+".jpg");
+    	  $(".input-row input:hidden").attr("value",""+imageId);
+    	  
+       }
+       
+      function postComments(){
+    	  if($("#author").val()==null||$("#author").val()==""){
+    		  alert("昵称不能为空!");
+    		  return false;
+    	  }
+    	  if($("#comment").val()==null||$("#comment").val()==""){
+    		  alert("评论不能为空!");
+    		  return false;
+    	  }
+    	  alert("评论成功,待审核");
+    	  return true;
+      }
+      
+      function foraddComment(data,name){
+    	  alert(name);
+    	/*  if(data.tbMessages==null||data.tbMessages.length==0){
+    		  return;
+    	  }*/
+    	 for(var j=0;j<data.tbMessages.length;j++){
+    		alert(data.tbMessages[j].aurthor);
+    		 foraddComment(data.tbMessages[j],data.tbMessages[j].aurthor);
+        }
+      }
+      
+      
+         function jump(event,page,vue){
+            for(var i=0;i<vue.result.listSize;i++){
+            	$("#comments-navi span").eq(i).removeClass("page-numbers current");
+            	$("#comments-navi span").eq(i).addClass("page-numbers");
+            }
+        	 event.currentTarget.className="page-numbers current";
+        	 if(page==vue.result.nowPage)
+        	 {
+        		 return;
+        	 }
+        	 vue.loadMessages(page);
+         }
+       
+          $(function(){
+        	  $("#navigation").load("/blog/navigation.html");
+        	  var dataSource={
+        			  uri:'showMessages',
+        			  result:''
+        	  };
+        	   var vue=new Vue({
+        		  el:".comments-main",
+        		  data:dataSource,
+        		   created:function(){
+					
+				   },
+				   mounted:function(){
+					   this.loadMessages();
+				   },
+        		  methods:{
+        			  loadMessages:function(page){
+        					if(page==null)
+   						     page=1;
+   							var uri=this.uri+'?page='+page;
+   							axios.get(uri).then(function(response){
+   								vue.result=response.data;
+   							});
+        			  },
+        			  jump:function(event,page){
+        				  jump(event,page,vue);
+        			  },
+        			 /* reply:function(aurthor,id){
+        				  //点击回复之间显示所有评论
+        				  $.post("replyComment",{'id':id},function(data){
+        					 for(var i=0;i<data.length;i++){
+        						$("#replyComment"+id).append(data[i].aurthor+"对"+aurthor+"说:"+data[i].comments);
+        					 }
+        				  });
+        				  if($(".author-info input").length<2){
+        					  //显示回复栏
+            				  $(".author-info").append("<input type='text' name='replyAurthor' id='replyAurthor'"+"value='回复给:"+aurthor+"' tabindex='3' title='Website' readonly='readonly'/>");
+            				  $(".author-info").append("<input type='hidden' name='replyId' id='replyId'"+"value='"+id+"'/>");
+            				  //显示取消
+            				  $("#cancel-comment-reply-link").css("display","");
+        				  }
+        			  },*/
+        			  cancel:function(event){
+        				  $(event.currentTarget).css("display","none");
+        				  $("#replyAurthor").remove();
+        				  $("#replyId").remove();
+        			  }
+        			  /*foraddComment:function(data,name){
+        				  foraddComment(data,name);
+        			  }*/
+        		  }
+        	   });
+          });
+       </script>
+       
+       
+</html>

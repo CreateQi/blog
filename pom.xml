@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.xue</groupId>
+  <artifactId>boke</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+    
+    <!-- 导入springboot父项目依赖 -->
+  <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.9.RELEASE</version>
+   </parent>
+   
+     <!-- 修改thymeleaf版本 -->
+   <properties>
+        <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
+        <thymeleaf-layout-dialect.version>2.1.1</thymeleaf-layout-dialect.version>
+</properties> 
+   
+   <dependencies>
+   
+   <dependency>
+				<groupId>org.apache.zookeeper</groupId>
+				<artifactId>zookeeper</artifactId>
+				<version>3.4.10</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.curator</groupId>
+				<artifactId>curator-framework</artifactId>
+				<version>2.12.0</version>
+			</dependency>
+			<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-recipes</artifactId>
+			<version>2.12.0</version>
+		</dependency>
+   
+      <!-- 导入运行场景 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        
+          <!-- --> <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency> 
+        
+        <dependency>
+        <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <!-- druid连接池 -->
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid</artifactId>
+        <version>1.0.9</version>
+    </dependency>
+         <!-- 数据库驱动 -->
+         <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+         <!-- MyBatis -->
+      <dependency> 
+             <groupId>org.mybatis.spring.boot</groupId> 
+             <artifactId>mybatis-spring-boot-starter</artifactId> 
+             <version>1.3.0</version> 
+        </dependency> 
+        <!-- 依赖thymeleaf  -->
+     <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+    
+        <!-- 导入DevTools -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+        <!--  optional:可选择的 依赖不传递 -->
+        <optional>true</optional>
+    </dependency>
+     <!-- 分页插件 -->
+			<dependency>
+				<groupId>com.github.pagehelper</groupId>
+				<artifactId>pagehelper</artifactId>
+				<version>4.1.6</version>
+			</dependency>
+     
+   </dependencies>
+    
+    <build>
+         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+        <finalName>blog</finalName>
+    </build>
+  
+</project>

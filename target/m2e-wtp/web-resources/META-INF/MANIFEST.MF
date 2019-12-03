@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: boke
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: ASUS
+Implementation-Vendor-Id: com.xue
+Build-Jdk: 1.8.0_181
+Implementation-URL: http://projects.spring.io/spring-boot/boke/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

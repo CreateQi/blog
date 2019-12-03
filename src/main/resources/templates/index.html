@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="/blog/css/index.css" media="all" />
+	</head>
+
+	 <body class="home blog custom-background round-avatars" id="body">
+	  <div id="navigation"></div>
+		<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+			<div class="site-branding text-center">
+				<a href="">
+					<figure>
+						<img class="custom-logo avatar" src="/blog/images/omikron.png" />
+					</figure>
+				</a>
+				<h3 class="blog-description"><p>奇先僧i</p></h3>
+			</div>
+			<!-- .site-branding -->
+			<div class="decor-part">
+				<div id="particles-js"></div>
+			</div>
+			<div class="animation-header">
+				<div class="decor-wrapper">
+					<svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+						<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+						<path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+						<path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+						<path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+						<path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+						<path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+						<path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<div id="main" class="content">
+			<div class="container" id="container">
+					<div class="posts-list js-posts">
+						<div id="review" class="post post-layout-list" data-aos="fade-up">
+						
+							<div  class="postnormal review" v-for="blog in restul.data">
+								<div class="post-container review-item">
+									<div class="row review-item-wrapper">
+										<div class="col-sm-3">
+											<a rel="nofollow" href="detail.html">
+												<div class="review-item-img">
+												 <img  :src="blog.imgurl" width="100%">
+												</div>
+											</a>
+										</div>
+										<div class="col-sm-9 flex-xs-middle">
+											<div class="review-item-title">
+												<a :href="'detail?bid='+blog.id" rel="bookmark">{{blog.title}}</a>
+											</div>
+											<div class="review-item-creator">{{blog.createtime}}</div>
+											<span class="review-item-info">{{blog.visits}} Reading</span>
+										</div>
+									</div>
+									<div class="review-bg-wrapper">
+										<div class="bg-blur" >
+										<img :src="blog.imgurl" width="100%">
+										</div>
+									</div>
+								</div>
+								<div class="post-container">
+									<div class="entry-content" v-html="blog.context"></div>
+									<div class="post-footer">
+										<a class="gaz-btn primary" href="detail.html">READ MORE</a>
+										<span class="total-comments-on-post pull-right"><a href="javascript:void(0)">{{blog.commentNums}} Comments</a></span>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<!-- post-formats end Infinite Scroll star -->
+					<!-- post-formats -->
+					<div class="pagination js-pagination" id="js-pagination">
+						<div class="js-next pagination__load" v-for="i in restul.pageNum" style="display:inline;">
+						 <a  href="#" @click="load(i)" v-if="i<restul.pageNum">{{i}}-</a>
+						 <a  href="#" @click="load(i)" v-if="i==restul.pageNum">{{i}}</a>
+						</div>
+					</div>
+					<!-- -pagination  -->
+			</div>
+		</div>
+			<footer id="footer" class="overlay animated from-top">
+			<div class="decor-wrapper">
+				<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+					<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+					<path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+					<path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+					<path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+					<path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+					<path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+					<path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+				</svg>
+			</div>
+			<div class="socialize" data-aos="zoom-in">
+				<li>
+					<a title="weibo" class="socialicon" href=""><i class="iconfont" aria-hidden="true">&#xe601;</i></a>
+				</li>
+				<li class="wechat">
+					<a class="socialicon"><i class="iconfont">&#xe609;</i></a>
+					<div class="wechatimg"><img src="/blog/images/qi.jpg"></div>
+				</li>
+				<li>
+					<a title="QQ" class="socialicon" href="" target="_blank"><i class="iconfont" aria-hidden="true">&#xe616;</i></a>
+				</li>
+			</div>
+			<div class="cr">
+				Copyright&copy;2019. Design by
+				<a href="javascript:void(0)">Qi</a>
+			</div>
+
+	</body>
+			<script type='text/javascript' src='/blog/js/jquery.min.js'></script>
+			<script type='text/javascript' src='/blog/js/plugins.js'></script>
+			<script type='text/javascript' src='/blog/js/script.js'></script>
+			<script type='text/javascript' src='/blog/js/particles.js'></script>
+			<script type='text/javascript' src='/blog/js/aos.js'></script>
+			<script type='text/javascript' src='/blog/js/axios.min.js'></script>
+		<script src="/blog/js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(function(){
+		 $("#navigation").load("/blog/navigation.html");
+		 var dataSource={
+		    		uri:'showindex',
+		    		restul:''
+		    };
+				var vue=new Vue(
+				{
+					el:"#container",
+					data:dataSource,
+					created:function(){
+						 this.load();
+					 },
+					methods:{
+						load:function(page){
+							if(page==null)
+						     page=1;
+							var uri=this.uri+'?page='+page;
+							axios.get(uri).then(function(response){
+								vue.restul=response.data;
+							})
+						}
+					}
+				});
+	});
+	</script>
+
+</html>

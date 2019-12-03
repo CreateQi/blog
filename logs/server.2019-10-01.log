@@ -1,0 +1,295 @@
+2019-10-01 10:44:40.280 [restartedMain] INFO  com.xue.App - Starting App on LAPTOP-4SLSREOT with PID 1060 (E:\boot_study\boke\target\classes started by ASUS in E:\boot_study\boke)
+2019-10-01 10:44:40.282 [restartedMain] INFO  com.xue.App - No active profile set, falling back to default profiles: default
+2019-10-01 10:44:40.651 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@267c4517: startup date [Tue Oct 01 10:44:40 CST 2019]; root of context hierarchy
+2019-10-01 10:44:40.705 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-10-01 10:44:42.436 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2019-10-01 10:44:42.447 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-01 10:44:42.447 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-01 10:44:42.571 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-01 10:44:42.572 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1922 ms
+2019-10-01 10:44:42.685 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-01 10:44:42.688 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-01 10:44:42.689 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-01 10:44:42.689 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-01 10:44:42.689 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-01 10:44:43.418 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@267c4517: startup date [Tue Oct 01 10:44:40 CST 2019]; root of context hierarchy
+2019-10-01 10:44:43.547 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/insertComment],methods=[POST]}" onto public com.xue.result.Result com.xue.controller.DetailController.insertComment(int,java.lang.String,java.lang.String)
+2019-10-01 10:44:43.548 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showDetail],methods=[POST]}" onto public java.lang.Object com.xue.controller.DetailController.getDetailBlog(int)
+2019-10-01 10:44:43.550 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showindex],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.IndexController.getData(int,int)
+2019-10-01 10:44:43.552 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showMessages],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.MessageController.getMessages(int,int)
+2019-10-01 10:44:43.552 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/replyComment],methods=[POST]}" onto public java.lang.Object com.xue.controller.MessageController.replyComment(int)
+2019-10-01 10:44:43.553 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/postComment],methods=[POST]}" onto public java.lang.String com.xue.controller.MessageController.postComment(java.lang.String,java.lang.String,int)
+2019-10-01 10:44:43.553 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getLinkList],methods=[POST]}" onto public java.util.List<com.xue.pojo.TbLink> com.xue.controller.MessageController.getLinkList()
+2019-10-01 10:44:43.555 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.index()
+2019-10-01 10:44:43.555 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/update],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.update()
+2019-10-01 10:44:43.556 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/search],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.search()
+2019-10-01 10:44:43.556 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/link],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.link()
+2019-10-01 10:44:43.556 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/gustbook],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.gustbook()
+2019-10-01 10:44:43.556 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/detail],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.detail()
+2019-10-01 10:44:43.557 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/searchBlog]}" onto public java.util.List<com.xue.pojo.TbBlog> com.xue.controller.SearchController.showSearchResult(java.lang.String)
+2019-10-01 10:44:43.557 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showupdate],methods=[GET]}" onto public java.lang.Object com.xue.controller.UpdateController.showUpdate()
+2019-10-01 10:44:43.559 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-01 10:44:43.559 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-01 10:44:43.582 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 10:44:43.582 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 10:44:43.614 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 10:44:43.672 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-10-01 10:44:44.108 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-10-01 10:44:44.143 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-10-01 10:44:44.144 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-01 10:44:44.147 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-01 10:44:44.158 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-01 10:44:44.168 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-01 10:44:44.184 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-10-01 10:44:44.199 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2019-10-01 10:44:44.202 [restartedMain] INFO  com.xue.App - Started App in 4.233 seconds (JVM running for 5.13)
+2019-10-01 10:44:50.242 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-01 10:44:50.243 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-01 10:44:50.259 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-10-01 10:45:21.922 [http-nio-8080-exec-10] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-10-01 10:51:32.029 [Thread-6] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@267c4517: startup date [Tue Oct 01 10:44:40 CST 2019]; root of context hierarchy
+2019-10-01 10:51:32.036 [Thread-6] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-10-01 10:51:32.037 [Thread-6] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-10-01 10:51:32.042 [Thread-6] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-10-01 10:51:32.585 [restartedMain] INFO  com.xue.App - Starting App on LAPTOP-4SLSREOT with PID 1060 (E:\boot_study\boke\target\classes started by ASUS in E:\boot_study\boke)
+2019-10-01 10:51:32.585 [restartedMain] INFO  com.xue.App - No active profile set, falling back to default profiles: default
+2019-10-01 10:51:32.586 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ac19d0c: startup date [Tue Oct 01 10:51:32 CST 2019]; root of context hierarchy
+2019-10-01 10:51:32.994 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2019-10-01 10:51:32.995 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-01 10:51:32.995 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-01 10:51:33.011 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-01 10:51:33.012 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 426 ms
+2019-10-01 10:51:33.039 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-01 10:51:33.040 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-01 10:51:33.040 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-01 10:51:33.040 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-01 10:51:33.040 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-01 10:51:33.216 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ac19d0c: startup date [Tue Oct 01 10:51:32 CST 2019]; root of context hierarchy
+2019-10-01 10:51:33.222 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/insertComment],methods=[POST]}" onto public com.xue.result.Result com.xue.controller.DetailController.insertComment(int,java.lang.String,java.lang.String)
+2019-10-01 10:51:33.223 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showDetail],methods=[POST]}" onto public java.lang.Object com.xue.controller.DetailController.getDetailBlog(int)
+2019-10-01 10:51:33.223 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showindex],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.IndexController.getData(int,int)
+2019-10-01 10:51:33.224 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showMessages],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.MessageController.getMessages(int,int)
+2019-10-01 10:51:33.224 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/replyComment],methods=[POST]}" onto public java.lang.Object com.xue.controller.MessageController.replyComment(int)
+2019-10-01 10:51:33.224 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/postComment],methods=[POST]}" onto public java.lang.String com.xue.controller.MessageController.postComment(java.lang.String,java.lang.String,int)
+2019-10-01 10:51:33.224 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getLinkList],methods=[POST]}" onto public java.util.List<com.xue.pojo.TbLink> com.xue.controller.MessageController.getLinkList()
+2019-10-01 10:51:33.227 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.index()
+2019-10-01 10:51:33.228 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/update],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.update()
+2019-10-01 10:51:33.228 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/search],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.search()
+2019-10-01 10:51:33.228 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/link],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.link()
+2019-10-01 10:51:33.228 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/gustbook],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.gustbook()
+2019-10-01 10:51:33.228 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/detail],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.detail()
+2019-10-01 10:51:33.228 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/searchBlog]}" onto public java.util.List<com.xue.pojo.TbBlog> com.xue.controller.SearchController.showSearchResult(java.lang.String)
+2019-10-01 10:51:33.229 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showupdate],methods=[GET]}" onto public java.lang.Object com.xue.controller.UpdateController.showUpdate()
+2019-10-01 10:51:33.229 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-01 10:51:33.230 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-01 10:51:33.233 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 10:51:33.234 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 10:51:33.242 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 10:51:33.250 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-10-01 10:51:33.291 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-10-01 10:51:33.316 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-10-01 10:51:33.316 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-01 10:51:33.318 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-01 10:51:33.323 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-01 10:51:33.324 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-01 10:51:33.326 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-10-01 10:51:33.329 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2019-10-01 10:51:33.330 [restartedMain] INFO  com.xue.App - Started App in 0.789 seconds (JVM running for 414.258)
+2019-10-01 10:51:35.714 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ac19d0c: startup date [Tue Oct 01 10:51:32 CST 2019]; root of context hierarchy
+2019-10-01 10:51:35.715 [Thread-10] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-10-01 10:51:35.715 [Thread-10] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-10-01 10:51:36.215 [restartedMain] INFO  com.xue.App - Starting App on LAPTOP-4SLSREOT with PID 1060 (E:\boot_study\boke\target\classes started by ASUS in E:\boot_study\boke)
+2019-10-01 10:51:36.215 [restartedMain] INFO  com.xue.App - No active profile set, falling back to default profiles: default
+2019-10-01 10:51:36.216 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ab8367a: startup date [Tue Oct 01 10:51:36 CST 2019]; root of context hierarchy
+2019-10-01 10:51:36.574 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2019-10-01 10:51:36.574 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-01 10:51:36.574 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-01 10:51:36.586 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-01 10:51:36.587 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 371 ms
+2019-10-01 10:51:36.606 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-01 10:51:36.607 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-01 10:51:36.607 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-01 10:51:36.607 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-01 10:51:36.607 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-01 10:51:36.804 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ab8367a: startup date [Tue Oct 01 10:51:36 CST 2019]; root of context hierarchy
+2019-10-01 10:51:36.810 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/insertComment],methods=[POST]}" onto public com.xue.result.Result com.xue.controller.DetailController.insertComment(int,java.lang.String,java.lang.String)
+2019-10-01 10:51:36.810 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showDetail],methods=[POST]}" onto public java.lang.Object com.xue.controller.DetailController.getDetailBlog(int)
+2019-10-01 10:51:36.811 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showindex],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.IndexController.getData(int,int)
+2019-10-01 10:51:36.812 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showMessages],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.MessageController.getMessages(int,int)
+2019-10-01 10:51:36.812 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/replyComment],methods=[POST]}" onto public java.lang.Object com.xue.controller.MessageController.replyComment(int)
+2019-10-01 10:51:36.812 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/postComment],methods=[POST]}" onto public java.lang.String com.xue.controller.MessageController.postComment(java.lang.String,java.lang.String,int)
+2019-10-01 10:51:36.812 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getLinkList],methods=[POST]}" onto public java.util.List<com.xue.pojo.TbLink> com.xue.controller.MessageController.getLinkList()
+2019-10-01 10:51:36.813 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.index()
+2019-10-01 10:51:36.813 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/update],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.update()
+2019-10-01 10:51:36.813 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/search],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.search()
+2019-10-01 10:51:36.813 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/link],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.link()
+2019-10-01 10:51:36.813 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/gustbook],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.gustbook()
+2019-10-01 10:51:36.813 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/detail],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.detail()
+2019-10-01 10:51:36.814 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/searchBlog]}" onto public java.util.List<com.xue.pojo.TbBlog> com.xue.controller.SearchController.showSearchResult(java.lang.String)
+2019-10-01 10:51:36.814 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showupdate],methods=[GET]}" onto public java.lang.Object com.xue.controller.UpdateController.showUpdate()
+2019-10-01 10:51:36.815 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-01 10:51:36.815 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-01 10:51:36.819 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 10:51:36.819 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 10:51:36.830 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 10:51:36.840 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-10-01 10:51:36.880 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-10-01 10:51:36.901 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-10-01 10:51:36.902 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-01 10:51:36.903 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-01 10:51:36.907 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-01 10:51:36.908 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-01 10:51:36.909 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-10-01 10:51:36.912 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2019-10-01 10:51:36.913 [restartedMain] INFO  com.xue.App - Started App in 0.728 seconds (JVM running for 417.84)
+2019-10-01 10:51:45.642 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-01 10:51:45.643 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-01 10:51:45.647 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2019-10-01 10:51:46.050 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2019-10-01 11:39:54.306 [restartedMain] INFO  com.xue.App - Starting App on LAPTOP-4SLSREOT with PID 12280 (E:\boot_study\boke\target\classes started by ASUS in E:\boot_study\boke)
+2019-10-01 11:39:54.308 [restartedMain] INFO  com.xue.App - No active profile set, falling back to default profiles: default
+2019-10-01 11:39:54.553 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@267c4517: startup date [Tue Oct 01 11:39:54 CST 2019]; root of context hierarchy
+2019-10-01 11:39:54.604 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-10-01 11:39:56.544 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2019-10-01 11:39:56.556 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-01 11:39:56.557 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-01 11:39:56.677 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-01 11:39:56.678 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2125 ms
+2019-10-01 11:39:56.828 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-01 11:39:56.834 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-01 11:39:56.835 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-01 11:39:56.835 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-01 11:39:56.835 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-01 11:39:57.525 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@267c4517: startup date [Tue Oct 01 11:39:54 CST 2019]; root of context hierarchy
+2019-10-01 11:39:57.660 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showDetail],methods=[POST]}" onto public java.lang.Object com.xue.controller.DetailController.getDetailBlog(int)
+2019-10-01 11:39:57.661 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/insertComment],methods=[POST]}" onto public com.xue.result.Result com.xue.controller.DetailController.insertComment(int,java.lang.String,java.lang.String)
+2019-10-01 11:39:57.662 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showindex],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.IndexController.getData(int,int)
+2019-10-01 11:39:57.665 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showMessages],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.MessageController.getMessages(int,int)
+2019-10-01 11:39:57.666 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getLinkList],methods=[POST]}" onto public java.util.List<com.xue.pojo.TbLink> com.xue.controller.MessageController.getLinkList()
+2019-10-01 11:39:57.666 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/replyComment],methods=[POST]}" onto public java.lang.Object com.xue.controller.MessageController.replyComment(int)
+2019-10-01 11:39:57.666 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/postComment],methods=[POST]}" onto public java.lang.String com.xue.controller.MessageController.postComment(java.lang.String,java.lang.String,int)
+2019-10-01 11:39:57.668 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.index()
+2019-10-01 11:39:57.668 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/update],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.update()
+2019-10-01 11:39:57.669 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/search],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.search()
+2019-10-01 11:39:57.669 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/link],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.link()
+2019-10-01 11:39:57.669 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/gustbook],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.gustbook()
+2019-10-01 11:39:57.670 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/detail],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.detail()
+2019-10-01 11:39:57.671 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/searchBlog]}" onto public java.util.List<com.xue.pojo.TbBlog> com.xue.controller.SearchController.showSearchResult(java.lang.String)
+2019-10-01 11:39:57.671 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showupdate],methods=[GET]}" onto public java.lang.Object com.xue.controller.UpdateController.showUpdate()
+2019-10-01 11:39:57.673 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-01 11:39:57.673 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-01 11:39:57.708 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 11:39:57.709 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 11:39:57.755 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 11:39:57.801 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-10-01 11:39:58.320 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-10-01 11:39:58.376 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-10-01 11:39:58.377 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-01 11:39:58.382 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-01 11:39:58.395 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-01 11:39:58.408 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-01 11:39:58.421 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-10-01 11:39:58.440 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2019-10-01 11:39:58.444 [restartedMain] INFO  com.xue.App - Started App in 4.375 seconds (JVM running for 4.888)
+2019-10-01 11:40:05.458 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-01 11:40:05.459 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-01 11:40:05.480 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2019-10-01 11:40:06.078 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-10-01 11:40:59.574 [restartedMain] INFO  com.xue.App - Starting App on LAPTOP-4SLSREOT with PID 16032 (E:\boot_study\boke\target\classes started by ASUS in E:\boot_study\boke)
+2019-10-01 11:40:59.576 [restartedMain] INFO  com.xue.App - No active profile set, falling back to default profiles: default
+2019-10-01 11:40:59.779 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@267c4517: startup date [Tue Oct 01 11:40:59 CST 2019]; root of context hierarchy
+2019-10-01 11:40:59.813 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-10-01 11:41:01.533 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2019-10-01 11:41:01.542 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-01 11:41:01.543 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-01 11:41:01.653 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-01 11:41:01.653 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1874 ms
+2019-10-01 11:41:01.780 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-01 11:41:01.785 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-01 11:41:01.785 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-01 11:41:01.786 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-01 11:41:01.786 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-01 11:41:02.367 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@267c4517: startup date [Tue Oct 01 11:40:59 CST 2019]; root of context hierarchy
+2019-10-01 11:41:02.493 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showDetail],methods=[POST]}" onto public java.lang.Object com.xue.controller.DetailController.getDetailBlog(int)
+2019-10-01 11:41:02.494 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/insertComment],methods=[POST]}" onto public com.xue.result.Result com.xue.controller.DetailController.insertComment(int,java.lang.String,java.lang.String)
+2019-10-01 11:41:02.496 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showindex],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.IndexController.getData(int,int)
+2019-10-01 11:41:02.497 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getLinkList],methods=[POST]}" onto public java.util.List<com.xue.pojo.TbLink> com.xue.controller.MessageController.getLinkList()
+2019-10-01 11:41:02.497 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/replyComment],methods=[POST]}" onto public java.lang.Object com.xue.controller.MessageController.replyComment(int)
+2019-10-01 11:41:02.497 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showMessages],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.MessageController.getMessages(int,int)
+2019-10-01 11:41:02.498 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/postComment],methods=[POST]}" onto public java.lang.String com.xue.controller.MessageController.postComment(java.lang.String,java.lang.String,int)
+2019-10-01 11:41:02.499 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.index()
+2019-10-01 11:41:02.499 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/update],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.update()
+2019-10-01 11:41:02.499 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/search],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.search()
+2019-10-01 11:41:02.499 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/gustbook],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.gustbook()
+2019-10-01 11:41:02.499 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/link],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.link()
+2019-10-01 11:41:02.500 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/detail],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.detail()
+2019-10-01 11:41:02.500 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/searchBlog]}" onto public java.util.List<com.xue.pojo.TbBlog> com.xue.controller.SearchController.showSearchResult(java.lang.String)
+2019-10-01 11:41:02.500 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showupdate],methods=[GET]}" onto public java.lang.Object com.xue.controller.UpdateController.showUpdate()
+2019-10-01 11:41:02.502 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-01 11:41:02.502 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-01 11:41:02.528 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 11:41:02.528 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 11:41:02.558 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 11:41:02.588 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-10-01 11:41:02.962 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-10-01 11:41:02.998 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-10-01 11:41:02.999 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-01 11:41:03.002 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-01 11:41:03.013 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-01 11:41:03.024 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-01 11:41:03.034 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-10-01 11:41:03.049 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2019-10-01 11:41:03.054 [restartedMain] INFO  com.xue.App - Started App in 3.68 seconds (JVM running for 4.147)
+2019-10-01 11:41:19.158 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-01 11:41:19.158 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-01 11:41:19.175 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2019-10-01 11:42:04.699 [http-nio-8080-exec-8] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-10-01 11:44:42.469 [restartedMain] INFO  com.xue.App - Starting App on LAPTOP-4SLSREOT with PID 12488 (E:\boot_study\boke\target\classes started by ASUS in E:\boot_study\boke)
+2019-10-01 11:44:42.471 [restartedMain] INFO  com.xue.App - No active profile set, falling back to default profiles: default
+2019-10-01 11:44:42.698 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@267c4517: startup date [Tue Oct 01 11:44:42 CST 2019]; root of context hierarchy
+2019-10-01 11:44:42.750 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-10-01 11:44:44.444 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2019-10-01 11:44:44.454 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-01 11:44:44.455 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-01 11:44:44.559 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-01 11:44:44.560 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1862 ms
+2019-10-01 11:44:44.661 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-01 11:44:44.664 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-01 11:44:44.665 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-01 11:44:44.665 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-01 11:44:44.665 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-01 11:44:45.325 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@267c4517: startup date [Tue Oct 01 11:44:42 CST 2019]; root of context hierarchy
+2019-10-01 11:44:45.439 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/insertComment],methods=[POST]}" onto public com.xue.result.Result com.xue.controller.DetailController.insertComment(int,java.lang.String,java.lang.String)
+2019-10-01 11:44:45.440 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showDetail],methods=[POST]}" onto public java.lang.Object com.xue.controller.DetailController.getDetailBlog(int)
+2019-10-01 11:44:45.441 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showindex],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.IndexController.getData(int,int)
+2019-10-01 11:44:45.442 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getLinkList],methods=[POST]}" onto public java.util.List<com.xue.pojo.TbLink> com.xue.controller.MessageController.getLinkList()
+2019-10-01 11:44:45.442 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/postComment],methods=[POST]}" onto public java.lang.String com.xue.controller.MessageController.postComment(java.lang.String,java.lang.String,int)
+2019-10-01 11:44:45.443 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showMessages],methods=[GET]}" onto public com.xue.result.Result com.xue.controller.MessageController.getMessages(int,int)
+2019-10-01 11:44:45.443 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/replyComment],methods=[POST]}" onto public java.lang.Object com.xue.controller.MessageController.replyComment(int)
+2019-10-01 11:44:45.444 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.index()
+2019-10-01 11:44:45.444 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/update],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.update()
+2019-10-01 11:44:45.444 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/search],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.search()
+2019-10-01 11:44:45.445 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/gustbook],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.gustbook()
+2019-10-01 11:44:45.445 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/link],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.link()
+2019-10-01 11:44:45.445 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/detail],methods=[GET]}" onto public java.lang.String com.xue.controller.PageController.detail()
+2019-10-01 11:44:45.445 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/searchBlog]}" onto public java.util.List<com.xue.pojo.TbBlog> com.xue.controller.SearchController.showSearchResult(java.lang.String)
+2019-10-01 11:44:45.446 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showupdate],methods=[GET]}" onto public java.lang.Object com.xue.controller.UpdateController.showUpdate()
+2019-10-01 11:44:45.447 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-01 11:44:45.447 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-01 11:44:45.474 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 11:44:45.474 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 11:44:45.504 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-01 11:44:45.536 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-10-01 11:44:45.953 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-10-01 11:44:45.989 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-10-01 11:44:45.991 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-01 11:44:45.995 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-01 11:44:46.005 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-01 11:44:46.015 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-01 11:44:46.026 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-10-01 11:44:46.048 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2019-10-01 11:44:46.053 [restartedMain] INFO  com.xue.App - Started App in 3.925 seconds (JVM running for 4.402)
+2019-10-01 11:44:46.520 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-01 11:44:46.520 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-01 11:44:46.535 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2019-10-01 11:44:47.244 [http-nio-8080-exec-6] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
